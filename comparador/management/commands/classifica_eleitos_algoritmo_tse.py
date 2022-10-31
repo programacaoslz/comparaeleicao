@@ -60,7 +60,7 @@ class Command(BaseCommand):
         
         partidos_ignorar = []      
 
-        #Calculo de sobras (art. 109, inciso I do Código Eleitoral)
+        #Calculo de sobras 
         for i in range(1,vagas_remanescentes + 1):
             #print(i)
             #traz o partido com melhor quociente excluindo-se os que não tem candidatos que atingiram os 20%
@@ -92,4 +92,4 @@ class Command(BaseCommand):
                     #print (vagas_remanescentes)
                 else:
                     partidos_ignorar.append(partido.ds_composicao_coligacao)
-                    print (partidos_ignorar)
+                    #print (partidos_ignorar)

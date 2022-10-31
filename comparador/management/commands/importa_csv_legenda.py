@@ -13,7 +13,7 @@ class Command(BaseCommand):
         with open(path) as f:
             reader = csv.reader(f)
             for row in reader:
-                print (row)
+                #print (row)
                 _, created = TotalizacaoLegenda.objects.get_or_create(
                     ds_composicao_coligacao = row[0],
                     qt_votos_leg_validos = row[1],

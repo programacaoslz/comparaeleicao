@@ -13,7 +13,7 @@ class Command(BaseCommand):
         with open(path) as f:
             reader = csv.reader(f)
             for row in reader:
-                print (row)
+                #print (row)
                 _, created = TotalizacaoCandidato.objects.get_or_create(
                     sg_uf = row[0],
                     cd_cargo = row[1],

@@ -1,13 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from django.core.management.base import BaseCommand, CommandError
+from django.core.management.base import BaseCommand
 from django.conf import settings
-import csv
 from comparador.models import TotalizacaoPartido
 from django.db.models import Sum
 from django.conf import settings
-import pandas as pd
-import csv
 
 # Gera quociente eleitoral e partidario
 class Command(BaseCommand):
@@ -20,5 +17,5 @@ class Command(BaseCommand):
             qp =  int(partido.qt_votos_validos / qe) #conversão para inteiro para desprezar  a fração
             partido.qp = qp
             partido.save()
-            print (qp)
-        print (qe)
+            #print (qp)
+        #print (qe)
