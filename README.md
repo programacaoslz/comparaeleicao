@@ -38,5 +38,6 @@ python manage.py runserver
 
 Acesse no navegador em 
 ```
-http://127.0.0.1:8000/admin e logue com o usuário criado
+http://127.0.0.1:8000/admin 
 ```
+e logue com o usuário criado
